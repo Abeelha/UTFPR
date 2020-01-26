@@ -1,0 +1,146 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> Formulário de inscrição </title>
+</head>
+
+<body>
+	<form method="post">
+		<table>
+			<!-- LINHA DA TABELA -->
+			<tr>
+				<td>
+					<label for="nome"> Nome: </label>
+				</td>
+				<td>
+					<input type="text" name="nome" required>
+				</td>
+			</tr>
+			
+			<!-- CAMPO IDADE -->
+			<tr>
+				<td>
+					<label for="idade"> Idade: </label>
+				</td>
+				<td> <!-- min & max numeros -->
+					<input type="number" name="idade" min="0" max="130" required>
+				</td>
+			</tr>
+			
+			<!-- CAMPO DATA DE NASCIMENTO -->
+			<tr>
+				<td>
+					<label for="nascimento"> Data de nascimento: </label>
+				</td>
+				<td> <!-- min & max numeros -->
+					<input type="date" name="nascimento" required>
+					<input type="time" name="nascimento">
+				</td>
+			</tr>
+			
+			<!-- CAMPO DATA DE E-MAIL -->
+			<tr>
+				<td>
+					<label for="email"> E-mail: </label>
+				</td>
+				<td> <!-- min & max numeros -->
+					<input type="email" name="email" required>
+				</td>
+			</tr>
+			
+			<!-- CAMPO CIDADE-->
+			<tr>
+				<td>
+					<label for="cidade"> Cidade: </label>
+				</td>
+				<td> <!-- min & max numeros -->
+					<input type="text" name="cidade" maxlength="30" required>
+				</td>
+			</tr>
+			
+			<!-- CAMPO TELEFONE-->
+			<tr>
+				<td>
+					<label for="telefone"> Telefone: </label>
+				</td>
+				<td> <!-- min & max numeros -->
+					<input type="text" name="ddd" maxlength="2" size="2" required>
+					<input type="text" name="telefone" maxlength="10" size="13" required>
+				</td>
+			</tr>
+			
+			<!-- CAMPO LOGIN-->
+			<tr>
+				<td>
+					<label for="login"> Login: </label>
+				</td>
+				<td> <!-- min & max numeros -->
+					<input type="text" name="login" maxlength="15" size="15" required>
+				</td>
+			</tr>
+			
+			<!-- CAMPO SENHA-->
+			<tr>
+				<td>
+					<label for="senha"> Senha: </label>
+				</td>
+				<td> <!-- min & max numeros -->
+					<input type="password" name="senha" maxlength="255" required>
+				</td>
+			</tr>
+			
+			<!-- CAMPOS AVALIAÇÃO -->
+			<tr>
+				<td>
+					<label for="avaliacao1"> Dê sua nota: </label>
+				</td>
+				<td>
+					<input type="range" min="0" max="10" step="0.25" value="5" name="inputAvaliacao1" id="inputAvaliacao1" oninput="outputAvaliacao1.value = inputAvaliacao1.value">
+					<output name="outputAvaliacao1" id="outputAvaliacao1"> 5 </output>
+				</td>
+			</tr>
+			
+			<!-- CAMPOS AVALIAÇÃO 2 -->
+			<tr>
+				<td>
+					<label for="avaliacao2"> Dê sua nota: </label>
+				</td>
+				<td>
+					<input type="radio" name="avaliacao2" >1
+					<input type="radio" name="avaliacao2" >2
+					<input type="radio" name="avaliacao2" >3
+					<input type="radio" name="avaliacao2" >4
+					<input type="radio" name="avaliacao2" >5
+				</td>
+			</tr>
+			
+			<!-- CAMPOS AVALIAÇÃO 3 -->
+			<tr>
+				<td>
+					<label for="avaliacao3" > Escolha os seus favoritos </label>
+				</td>
+				<td>
+					<input type="checkbox" name="avaliacao3"> Jogos
+					<input type="checkbox" name="avaliacao3"> Esportes
+					<input type="checkbox" name="avaliacao3"> Estudos
+					<input type="checkbox" name="avaliacao3"> Alimentação
+					<input type="checkbox" name="avaliacao3"> Tudo
+				</td>
+			</tr>
+			
+			<!-- BOTÔES PARA ENVIAR E LIMPAR -->
+			<tr>
+				<td>
+					<input type="submit" value="Enviar" name="enviar">
+				</td>
+				<td> <!-- reset = limpar campos -->
+					<input type="reset" value="Limpar" nmae="limpar">
+				</td>
+			</tr>
+	
+		</table>
+	</form>
+	
+</body>
+
+</html>
